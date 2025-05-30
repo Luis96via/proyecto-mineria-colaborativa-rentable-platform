@@ -9,7 +9,45 @@ Desarrollado por Luis Antonio Viña © 2025
 - Composer
 - Node.js & NPM
 
-## Instalación
+## Instalación Rápida (Recomendada)
+
+### Windows
+1. Clonar el repositorio:
+```bash
+git clone [URL_DEL_REPOSITORIO]
+cd [NOMBRE_DEL_PROYECTO]
+```
+
+2. Ejecutar el script de instalación:
+```bash
+install.bat
+```
+El script:
+- Configurará la base de datos automáticamente
+- Importará los datos necesarios
+- Instalará todas las dependencias
+- Configurará el archivo .env
+
+### Linux/Mac
+1. Clonar el repositorio:
+```bash
+git clone [URL_DEL_REPOSITORIO]
+cd [NOMBRE_DEL_PROYECTO]
+```
+
+2. Dar permisos de ejecución al script:
+```bash
+chmod +x install.sh
+```
+
+3. Ejecutar el script de instalación:
+```bash
+./install.sh
+```
+
+## Instalación Manual
+
+Si prefieres instalar manualmente:
 
 1. Clonar el repositorio:
 ```bash
@@ -17,19 +55,19 @@ git clone [URL_DEL_REPOSITORIO]
 cd [NOMBRE_DEL_PROYECTO]
 ```
 
-2. Instalar dependencias de PHP:
+2. Instalar dependencias PHP:
 ```bash
 cd core
 composer install
 ```
 
-3. Instalar dependencias de Node.js:
+3. Instalar dependencias NPM:
 ```bash
 npm install
 npm run dev
 ```
 
-4. Configurar el archivo de entorno:
+4. Configurar el archivo .env:
 ```bash
 cp .env.example .env
 ```
